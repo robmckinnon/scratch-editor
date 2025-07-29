@@ -4,6 +4,9 @@ import {FormattedMessage} from 'react-intl';
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
 
+import webmidiIconURL from './webmidi/webmidi.png';
+import webmidiInsetIconURL from './webmidi/webmidi-small.png';
+
 import penIconURL from './pen/pen.png';
 import penInsetIconURL from './pen/pen-small.svg';
 
@@ -389,5 +392,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/wedo'
+    },
+    {
+        name: (
+            <FormattedMessage
+                defaultMessage="WebMIDI"
+                description="Name for the 'WebMIDI' extension"
+                id="gui.extension.webmidi.name"
+            />
+        ),
+        extensionId: 'webmidi',
+        iconURL: webmidiIconURL,
+        insetIconURL: webmidiInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Web MIDI for Musical Instruments."
+                description="Description for the 'WebMIDI' extension"
+                id="gui.extension.webmidi.description"
+            />
+        ),
+        featured: true
     }
 ];
